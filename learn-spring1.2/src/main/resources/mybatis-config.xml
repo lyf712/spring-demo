@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--放在applicationContext配置-->
+<!--    &lt;!&ndash;加载属性文件，必须放置最前面&ndash;&gt;-->
+<!--    <properties resource="db.properties"/>-->
+<!--    &lt;!&ndash;环境配置&ndash;&gt;-->
+<!--    <typeAliases>-->
+<!--        <package name="com.lyf.Dao.Mapper"/>-->
+<!--    </typeAliases>-->
+
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+
+<!--            &lt;!&ndash;配置数据源 &ndash;&gt;-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${jdbc.driver}"/>-->
+<!--                <property name="url" value="${jdbc.url}"/>-->
+<!--                <property name="username" value="${jdbc.username}"/>-->
+<!--                <property name="password" value="${jdbc.password}"/>-->
+
+<!--            </dataSource>-->
+
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    映射文件配置-->
+        <mappers>
+            <mapper resource="dao/mapper/UserMapper.xml"/>
+        </mappers>
+
+    <!--注解形式-->
+<!--    <mappers>-->
+<!--        <package name="com.demo.mybatis.mapper"/>-->
+<!--    </mappers>-->
+
+
+</configuration>

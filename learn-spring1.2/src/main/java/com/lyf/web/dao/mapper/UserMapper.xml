@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.lyf.web.dao.UserDao">
+
+
+<!--    <select id="addOne" resultType="com.po.MyUser"-->
+<!--            parameterType="com.po.MyUser">-->
+<!--        select * from user where 1=1-->
+<!--        <if test="uname!=null and uname!=''">-->
+<!--            and uname like concat('%',#{uname},'%')-->
+<!--        </if>-->
+<!--    </select>-->
+
+    <insert id="addOne" parameterType="com.lyf.web.dao.entity.User">
+        INSERT INTO bank VALUES (#{id},#{userName},#{money})
+
+    </insert>
+
+
+
+</mapper>
